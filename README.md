@@ -131,8 +131,8 @@ Both versions work independently and can be viewed side by side to compare the d
 
 The website includes placeholder contact information:
 - **Address**: 123 Tech Street, Gulberg, Lahore, Punjab, Pakistan 54000
-- **Phone**: +923059522712
-- **Email**: manshahussain520@gmail.com, manshahussain520@outlook.com
+- **Phone**: +1 (555) 123-4567
+- **Email**: info@techsolutions.com, support@techsolutions.com
 - **Hours**: Mon - Fri, 9:00 AM - 6:00 PM
 
 ---
