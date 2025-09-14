@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - TechSolutions</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        /* Enhanced Responsive Design */
+        @media (max-width: 768px) {
+            .hero-gradient {
+                padding-top: 5rem !important;
+                padding-bottom: 4rem !important;
+                min-height: 350px !important;
+            }
+            .hero-gradient h1 {
+                font-size: 2.5rem !important;
+                line-height: 1.2 !important;
+            }
+            .hero-gradient .text-xl {
+                font-size: 1.1rem !important;
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .hero-gradient {
+                padding-top: 4rem !important;
+                padding-bottom: 3rem !important;
+                min-height: 300px !important;
+            }
+            .hero-gradient h1 {
+                font-size: 2rem !important;
+            }
+            .hero-gradient .text-xl {
+                font-size: 1rem !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-gradient {
+                min-height: 250px !important;
+            }
+            .hero-gradient h1 {
+                font-size: 1.75rem !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 fixed w-full top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center text-white text-xl font-bold">
+                        <div class="w-10 h-10 mr-3 bg-blue-600 rounded-lg flex items-center justify-center">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <span class="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">TechSolutions</span>
+                    </a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="about.html" class="bg-blue-600 text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" id="mobile-menu-button">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800">
+                <a href="index.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="contact.html" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="hero-gradient text-white pt-20 pb-16 min-h-[400px] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+                    About TechSolutions
+                </h1>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                    We are passionate about technology and dedicated to delivering innovative solutions that drive business success.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center mb-16">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h2>
+                    <p class="text-lg text-gray-600 mb-4">
+                        Founded in 2020, TechSolutions has been at the forefront of digital transformation, helping businesses of all sizes leverage technology to achieve their goals.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        We believe that technology should be accessible, reliable, and transformative. Our team of experienced developers, designers, and consultants work together to create solutions that not only meet your current needs but also scale with your future growth.
+                    </p>
+                    <p class="text-gray-600">
+                        From startups to enterprise-level organizations, we've helped hundreds of clients navigate the complex world of technology and emerge stronger, more efficient, and more competitive.
+                    </p>
+                </div>
+                <div class="mt-12 lg:mt-0">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Our Team" class="w-full rounded-lg shadow-xl">
+                </div>
+            </div>
+
+            <!-- Mission & Vision -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                <div class="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                        <p class="text-gray-600">
+                            To empower businesses through innovative technology solutions that drive growth, efficiency, and success in the digital age.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
+                        <p class="text-gray-600">
+                            To be the leading technology partner that businesses trust to transform their operations and achieve their digital ambitions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Meet Our Team</h2>
+                <p class="text-xl text-gray-600">The talented individuals behind our success</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                         alt="Team Member" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">John Smith</h3>
+                        <p class="text-blue-600 font-medium mb-3">CEO & Founder</p>
+                        <p class="text-gray-600">15+ years in technology leadership and business strategy.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                         alt="Sarah Johnson" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Sarah Johnson</h3>
+                        <p class="text-blue-600 font-medium mb-3">CTO</p>
+                        <p class="text-gray-600">Expert in full-stack development and cloud architecture.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                         alt="Team Member" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Mike Chen</h3>
+                        <p class="text-blue-600 font-medium mb-3">Lead Developer</p>
+                        <p class="text-gray-600">Specialized in mobile app development and UI/UX design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h5 class="text-lg font-semibold">TechSolutions</h5>
+                    <p class="text-gray-400">Empowering businesses through innovative technology.</p>
+                </div>
+                <div class="text-gray-400">
+                    <p>&copy; 2025 TechSolutions. All rights reserved.</p>
+                    <p class="text-sm text-gray-500">Developed by Mansha Hussain</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile menu JavaScript -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
